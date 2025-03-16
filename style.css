@@ -41,9 +41,15 @@ nav ul li{
 }
 
 .container{
-    min-height: 75vh;
+    min-height: 72vh;
     background-color: black;
     color: white;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url(images/bg.jpg);
 }
 
 .bottom{
@@ -63,7 +69,7 @@ nav ul li{
 }
 
 .icons{
-    margin-top: 34px;
+    margin-top: 15px;
 }
 
 .icons i{
