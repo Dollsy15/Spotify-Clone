@@ -42,6 +42,8 @@ nav ul li{
 
 .container{
     min-height: 75vh;
+    background-color: black;
+    color: white;
 }
 
 .bottom{
@@ -58,4 +60,12 @@ nav ul li{
 
 #myProgressBar{
     width: 80vw;
+}
+
+.icons{
+    margin-top: 34px;
+}
+
+.icons i{
+    cursor: pointer;
 }
