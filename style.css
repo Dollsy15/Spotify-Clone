@@ -257,7 +257,7 @@ nav ul li{
 }
 
 .songItem span {
-    margin-left: 10px;
+    margin-left: 25px;
 }
 
 .songItem:hover{
@@ -272,5 +272,4 @@ nav ul li{
 
 .timeStamp i {
     margin-left: 10px; 
-    min-width: 50px;
 }
