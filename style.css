@@ -85,8 +85,44 @@ body{
     100% { text-shadow: 0 0 10px #1db954; }
 }
 
-.profile{   
+.profile {
+    position: relative;
+    cursor: pointer;
+    padding: 8px 12px;
+    transition: 0.3s ease-in-out;
     font-weight: bold;
+}
+
+.profile:hover {
+    color: #1db954;
+}
+
+.profile-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    background: #222;
+    border-radius: 8px;
+    padding: 0.5px 0;
+    list-style: none;
+    min-height: 120px;
+}
+
+.profile:hover .profile-menu {
+    display: block;
+}
+
+.profile-menu li {
+    padding: 8px 12px;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+}
+
+.profile-menu li:hover {
+    background: #444;
+    color: grey
 }
 
 nav{
