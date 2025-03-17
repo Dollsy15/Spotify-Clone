@@ -39,6 +39,14 @@ body{
     width: 200px;
 }
 
+.home{
+    font-weight: bold;
+}
+
+.library{
+    font-weight: bold;
+}
+
 .premium-link {
     position: relative;
     padding: 10px 15px;
@@ -75,6 +83,10 @@ body{
     0% { text-shadow: 0 0 10px #1db954;}
     50% { text-shadow: 0 0 20px #1db954; }
     100% { text-shadow: 0 0 10px #1db954; }
+}
+
+.profile{   
+    font-weight: bold;
 }
 
 nav{
