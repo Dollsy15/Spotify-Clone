@@ -1,33 +1,78 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const playButtons = document.querySelectorAll(".fa-circle-play");
-    const audioPlayer = document.getElementById("audioPlayer");
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    playButtons.forEach(button => {
-        button.addEventListener("click", () => {
-            const songSrc = button.getAttribute("data-src");
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="images/logo.png" alt="Spotify">Spotify</li>
+            <li class="search-container">
+                <input type="text" class="search-bar" placeholder="Search for songs...">
+            </li>            
+            <li class="home">Home</li>
+            <li class="library">Your Library</li>
+            <li class="premium-link">Premium</li>
+            <li class="profile" id="profileBtn">
+                Profile
+                <ul class="profile-menu" id="profileMenu">
+                    <li>View Profile</li>
+                    <li>Settings</li>
+                    <li>Logout</li>
+                </ul>
+            </li>            
+        </ul>
+    </nav>
 
-            // If a new song is clicked, play it
-            if (audioPlayer.src !== songSrc) {
-                playButtons.forEach(btn => btn.classList.replace("fa-circle-pause", "fa-circle-play")); // Reset all buttons
+    <div class="container">
+        <div class="songList">
+            <h1>Best songs over here</h1>
+            <div>
+                <div class="songItem">
+                    <img src="covers/1.jpg" alt="1">
+                    <span>Lemme Love Youu!</span>
+                    <span class="songListPlay"><span class="timeStamp">05:35<i class="fa-solid fa-circle-play fa-1.5x play-button" data-src="songs/1.mp3"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/2.jpg" alt="2">
+                    <span>Under the Influence</span>
+                    <span class="songListPlay"><span class="timeStamp">02:30<i class="fa-solid fa-circle-play fa-1.5x" data-src="songs/2.mp3"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/3.jpg" alt="3">
+                    <span>The Cuppycake Sng</span>
+                    <span class="songListPlay"><span class="timeStamp">03:45<i class="fa-solid fa-circle-play fa-1.5x" data-src="songs/3.mp3"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/4.jpg" alt="4">
+                    <span>Lover (Taylor Swif)</span>
+                    <span class="songListPlay"><span class="timeStamp">01:51<i class="fa-solid fa-circle-play fa-1.5x" data-src="songs/4.mp3"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/5.jpg" alt="5">
+                    <span>Infinity(James Yng)</span>
+                    <span class="songListPlay"><span class="timeStamp">04:32<i class="fa-solid fa-circle-play fa-1.5x" data-src="songs/5.mp3"></i></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
 
-                audioPlayer.src = songSrc;
-                audioPlayer.play();
-                button.classList.replace("fa-circle-play", "fa-circle-pause"); // Change icon to pause
-            } else {
-                // Toggle play/pause
-                if (audioPlayer.paused) {
-                    audioPlayer.play();
-                    button.classList.replace("fa-circle-play", "fa-circle-pause");
-                } else {
-                    audioPlayer.pause();
-                    button.classList.replace("fa-circle-pause", "fa-circle-play");
-                }
-            }
-        });
-    });
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" max="100">
+        <div class="icons">
+            <i class="fa-solid fa-backward-step fa-2x"></i>
+            <i class="fa-solid fa-circle-play fa-2x"></i>
+            <i class="fa-solid fa-forward-step fa-2x"></i>
+        </div>
+    </div>
 
-    // When song ends, reset all buttons to play
-    audioPlayer.addEventListener("ended", () => {
-        playButtons.forEach(btn => btn.classList.replace("fa-circle-pause", "fa-circle-play"));
-    });
-});
+    <audio id="audioPlayer"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
