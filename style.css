@@ -32,11 +32,11 @@ body{
     border-radius: 20px;
     width: 150px;
     transition: 0.3s;
+    /* outline: none; */
 }
 
 .search-bar:focus {
     width: 200px;
-    border-color: #1DB954;
 }
 
 nav{
