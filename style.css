@@ -25,6 +25,20 @@ body{
     margin-right: 10px;
 }
 
+.search-bar {
+    padding: 6px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 150px;
+    transition: 0.3s;
+}
+
+.search-bar:focus {
+    width: 200px;
+    border-color: #1DB954;
+}
+
 nav{
     font-family: 'Ubuntu', sans-serif;
     background-color: rgba(0, 0, 0, 0.8); 
