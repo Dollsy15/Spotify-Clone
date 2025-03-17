@@ -39,6 +39,15 @@ body{
     width: 200px;
 }
 
+#darkModeToggle i {
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.dark-mode #darkModeToggle i {
+    color: yellow;
+}
+
 nav{
     font-family: 'Ubuntu', sans-serif;
     background-color: rgba(0, 0, 0, 0.8); 
