@@ -270,6 +270,10 @@ nav ul li{
     margin: 0 20px;
 }
 
+.songItem i{
+    color: #1db954;
+}
+
 .timestamp{
     margin: 0 23px;
 }
@@ -277,6 +281,10 @@ nav ul li{
 .timeStamp i {
     margin-left: 10px; 
     cursor: pointer;
+}
+
+#playPauseBtn{
+    color: white;
 }
 
 .volume-container {
