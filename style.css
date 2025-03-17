@@ -278,3 +278,35 @@ nav ul li{
     margin-left: 10px; 
     cursor: pointer;
 }
+
+.volume-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#volumeIcon {
+    font-size: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+#volumeIcon:hover {
+    transform: scale(1.2);
+    color: #fff;
+}
+
+#volumeControl {
+    width: 100px;
+    height: 5px;
+    background: #fff;
+    cursor: pointer;
+    margin-right: 25px;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
+#volumeControl:hover {
+    width: 120px;
+}
