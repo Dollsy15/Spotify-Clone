@@ -270,6 +270,11 @@ nav ul li{
     margin: 0 20px;
 }
 
+.timestamp{
+    margin: 0 23px;
+}
+
 .timeStamp i {
     margin-left: 10px; 
+    cursor: pointer;
 }
