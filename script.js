@@ -1,3 +1,6 @@
+
+console.log("Welcome to Spotify");
+
 document.addEventListener("DOMContentLoaded", () => {
     const playButtons = document.querySelectorAll(".fa-circle-play");
     const bottomPlayButton = document.getElementById("playPauseBtn");
@@ -103,3 +106,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+
+
+
+
