@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const volumeControl = document.getElementById("volumeControl");
     const currentSongName = document.getElementById("currentSongName");
 
-    let songs = [...playButtons]; // Convert NodeList to Array
+    let songs = [...playButtons]; 
     let currentIndex = -1;
-    let currentTime = 0; // Store last played time
+    let currentTime = 0; 
 
     function updateProgressBar() {
         progressBar.value = (audioPlayer.currentTime / audioPlayer.duration) * 100 || 0;
